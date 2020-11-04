@@ -66,6 +66,4 @@
 <url>http://192.168.44.44:8081/artifactory/libs-snapshot-local</url>
 </snapshotRepository>
 </distributionManagement>
-
-
 </project>
