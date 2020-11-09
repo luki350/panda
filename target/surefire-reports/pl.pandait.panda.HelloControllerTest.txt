@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: pl.pandait.panda.HelloControllerTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.073 s - in pl.pandait.panda.HelloControllerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.007 s - in pl.pandait.panda.HelloControllerTest
