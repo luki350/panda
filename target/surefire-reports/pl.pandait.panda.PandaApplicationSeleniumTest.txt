@@ -1,24 +1,24 @@
 -------------------------------------------------------------------------------
 Test set: pl.pandait.panda.PandaApplicationSeleniumTest
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 5.225 s <<< FAILURE! - in pl.pandait.panda.PandaApplicationSeleniumTest
-greetings_shouldOpenMainPageThenReturnWelcomeText  Time elapsed: 3.001 s  <<< ERROR!
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 4.546 s <<< FAILURE! - in pl.pandait.panda.PandaApplicationSeleniumTest
+greetings_shouldOpenMainPageThenReturnWelcomeText  Time elapsed: 2.6 s  <<< ERROR!
 org.openqa.selenium.WebDriverException: 
-Reached error page: about:neterror?e=connectionFailure&u=http%3A//192.168.44.44%3A8080/&c=UTF-8&d=Firefox%20can%E2%80%99t%20establish%20a%20connection%20to%20the%20server%20at%20192.168.44.44%3A8080.
+Reached error page: about:neterror?e=connectionFailure&u=http%3A//ubuntucompose%3A8080/&c=UTF-8&d=Firefox%20can%E2%80%99t%20establish%20a%20connection%20to%20the%20server%20at%20ubuntucompose%3A8080.
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'vagrant', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-112-generic', java.version: '11.0.8'
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 81.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200930150533, moz:geckodriverVersion: 0.27.0, moz:headless: false, moz:processID: 1450, moz:profile: /tmp/rust_mozprofileNpclzq, moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, platformVersion: 4.15.0-112-generic, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: 76003341-6c19-4f48-8d0e-8a4...}
-Session ID: 76003341-6c19-4f48-8d0e-8a4b114b8371
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 81.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200930150533, moz:geckodriverVersion: 0.27.0, moz:headless: false, moz:processID: 2830, moz:profile: /tmp/rust_mozprofilevCKMiQ, moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, platformVersion: 4.15.0-112-generic, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: 91516945-92ca-4952-b002-6fc...}
+Session ID: 91516945-92ca-4952-b002-6fc01183b89b
 	at pl.pandait.panda.PandaApplicationSeleniumTest.startup(PandaApplicationSeleniumTest.java:35)
 
-greetings_shouldOpenSubpageThenReturnGreetingsText  Time elapsed: 2.194 s  <<< ERROR!
+greetings_shouldOpenSubpageThenReturnGreetingsText  Time elapsed: 1.932 s  <<< ERROR!
 org.openqa.selenium.WebDriverException: 
-Reached error page: about:neterror?e=connectionFailure&u=http%3A//192.168.44.44%3A8080/&c=UTF-8&d=Firefox%20can%E2%80%99t%20establish%20a%20connection%20to%20the%20server%20at%20192.168.44.44%3A8080.
+Reached error page: about:neterror?e=connectionFailure&u=http%3A//ubuntucompose%3A8080/&c=UTF-8&d=Firefox%20can%E2%80%99t%20establish%20a%20connection%20to%20the%20server%20at%20ubuntucompose%3A8080.
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'vagrant', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-112-generic', java.version: '11.0.8'
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 81.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200930150533, moz:geckodriverVersion: 0.27.0, moz:headless: false, moz:processID: 1644, moz:profile: /tmp/rust_mozprofileUQcpDG, moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, platformVersion: 4.15.0-112-generic, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: a1a60860-c308-4a7f-87ab-d9a...}
-Session ID: a1a60860-c308-4a7f-87ab-d9a846fbdd7a
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 81.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200930150533, moz:geckodriverVersion: 0.27.0, moz:headless: false, moz:processID: 3216, moz:profile: /tmp/rust_mozprofilefyd8AU, moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, platformVersion: 4.15.0-112-generic, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: 21279b77-31dd-457b-a4e1-ce8...}
+Session ID: 21279b77-31dd-457b-a4e1-ce88ac435ace
 	at pl.pandait.panda.PandaApplicationSeleniumTest.startup(PandaApplicationSeleniumTest.java:35)
 
