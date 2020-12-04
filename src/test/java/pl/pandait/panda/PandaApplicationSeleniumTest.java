@@ -16,13 +16,13 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.web.server.LocalServerPort;
 import static org.junit.Assert.assertEquals;
 
-@SpringBootTest(classes = {PandaApplication.class}, webEnvironment = SpringBootTest.WebEnvironment.DEFINED_PORT)
+//@SpringBootTest(classes = {PandaApplication.class}, webEnvironment = SpringBootTest.WebEnvironment.DEFINED_PORT)
 public class PandaApplicationSeleniumTest {
     
     private static WebDriver driver;
     
-    @LocalServerPort
-    private int port;
+    //@LocalServerPort
+   // private int port;
     
     @BeforeEach
     public void startup() throws InterruptedException, MalformedURLException {
@@ -34,7 +34,7 @@ public class PandaApplicationSeleniumTest {
         
         driver.get(String.format("http://pandaapp:%d/", 8080));
 
-        
+        //Czekamy 2 sekund
         Thread.sleep(2000);
     }
 
