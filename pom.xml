@@ -184,7 +184,7 @@
       </build>
     </profile>
     <profile>
-      <id>docker</id>
+      <id>docker11</id>
       <build>
         <plugins>
           <plugin>
