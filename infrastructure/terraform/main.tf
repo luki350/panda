@@ -30,13 +30,13 @@ resource "aws_elb" "panda" {
     unhealthy_threshold = 2
     timeout             = 3
     interval            = 30
-    target              = "HTTP:8080/"
+    target              = "HTTP:8083/"
   }
 
   listener {
     lb_port           = 80
     lb_protocol       = "http"
-    instance_port     = "8080"
+    instance_port     = "8083"
     instance_protocol = "http"
   }
 
