@@ -23,7 +23,7 @@ resource "aws_instance" "panda" {
 resource "aws_elb" "panda" {
   name               = "panda-load-balancer"
   availability_zones = var.elb_availability_zones
-  security_groups   = "sg-69a3ce5b"
+  security_groups   = ["sg-69a3ce5b"]
 
   health_check {
     healthy_threshold   = 2
