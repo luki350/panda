@@ -5,10 +5,12 @@ pipeline {
     tools {
         // Install the Maven version configured as "M3" and add it to the path.
         maven "auto_maven"
+        terraform "Terraform"
     }
     environment {
         IMAGE = readMavenPom().getArtifactId()
         VERSION = readMavenPom().getVersion()
+        ANSIBLE = tool name: 'ansible', type: 'com.cloudbees.jenkins.plugins.customtools.CustomTool'
     }
 
   
@@ -56,8 +58,26 @@ pipeline {
                 }
             } 
         }
-
-
+        stage('Run Terraform'){
+            steps {
+                dir('infrastructure/terraform'){
+                    sh "terraform init && terraform apply -auto-approve"
+                }
+            }
+        }
+        stage('Copy Ansible Role'){
+            steps {
+             sh "cp -r infrastructure/ansible/panda/ /etc/ansible/roles/"
+            }
+        }
+        stage('Run Ansible'){
+            steps {
+                dir('infrastructure/ansible'){
+                    sh "chmod 600 ../panda_kurs.pem"
+                    sh "ansible-playbook -i ./inventory playbook.yml"
+                }
+            }
+        }
     }
         post {
                 always { 
