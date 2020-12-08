@@ -8,7 +8,7 @@ resource "aws_instance" "panda" {
   instance_type             = "t2.micro"
   availability_zone         = var.ec2_availability_zone
   key_name                  = "panda_kurs"
-  vpc_security_group_ids    = "sg-69a3ce5b"
+  vpc_security_group_ids    = ["sg-69a3ce5b"]
 
   connection {
     host        = self.public_ip
