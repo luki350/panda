@@ -17,13 +17,7 @@ resource "aws_instance" "panda" {
     private_key = file(var.ssh_key_path)
   }
 
-  provisioner "remote-exec" {
-    inline = [
-      "echo \"Hello, World ${self.public_ip}\" > index.html",
-      "nohup busybox httpd -f -p 8080 &",
-      "sleep 1",
-    ]
-  }
+
 }
 
 resource "aws_elb" "panda" {
@@ -47,6 +41,12 @@ resource "aws_elb" "panda" {
   }
 
   instances = aws_instance.panda.*.id
+}
+
+resource "local_file" "ansible_inventory" {
+  content = templatefile("inventory.tpl", 
+                        { ansible_ip = "${join("\n", aws_instance.panda.*.public_ip)}" })
+  filename = "${path.module}/../ansible/inventory"
 }
 
 output "elb_dns_name" {
